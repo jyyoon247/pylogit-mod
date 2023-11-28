@@ -93,7 +93,8 @@ def create_choice_model(data,
                         shape_names=None,
                         nest_spec=None,
                         mixing_id_col=None,
-                        mixing_vars=None):
+                        mixing_vars=None,
+                        weights=None):
     """
     Parameters
     ----------
@@ -216,7 +217,8 @@ def create_choice_model(data,
                     "shape_names": shape_names,
                     "nest_spec": nest_spec,
                     "mixing_id_col": mixing_id_col,
-                    "mixing_vars": mixing_vars}
+                    "mixing_vars": mixing_vars,
+                    "weights": weights}
     return model_type_to_class[model_type](data,
                                            alt_id_col,
                                            obs_id_col,
