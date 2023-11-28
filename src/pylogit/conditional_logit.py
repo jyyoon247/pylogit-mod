@@ -312,6 +312,7 @@ class MNL(base_mcm.MNDC_Model):
                 ridge=None,
                 constrained_pos=None,
                 just_point=False,
+                weights=None,
                 **kwargs):
         """
         Parameters
